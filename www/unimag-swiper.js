@@ -58,6 +58,11 @@ Swiper.on = function (event, callback, scope) {
 	window.addEventListener(event, callback.bind(scope || window));
 };
 
+Swiper.off = function (event, callback, scope) {
+    window.removeEventListener(event, callback.bind(scope || window));
+};
+
+
 module.exports = Swiper;
 
 /*
