@@ -434,6 +434,20 @@ UmReader readerType;
 
         exp = [data substringWithRange:[[matches objectAtIndex:0] rangeAtIndex:3]];
 
+		// If there are not enough elements in the array or it's nil,
+		// send the bad data back. The JS will log the error as needed.
+		if (name == nil || name.count < 2) {
+			NSDictionary* cardData = [[NSDictionary alloc] initWithObjectsAndKeys:
+									  data, @"full_card_data",
+									  nil];
+
+			return [[NSString alloc] initWithData:
+					[NSJSONSerialization dataWithJSONObject:cardData
+													options:0
+													  error:&error]
+										 encoding:NSUTF8StringEncoding];
+		}
+		
         if (num && name[0] && name[1] && exp) {
             NSDictionary* cardData = [[NSDictionary alloc] initWithObjectsAndKeys:
                 num, @"card_number",
