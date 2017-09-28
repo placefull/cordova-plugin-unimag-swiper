@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-unimag-swiper",
+  "version": "0.0.3",
+  "description": "A plugin to interact with UniMag card swipers.",
+  "cordova": {
+    "id": "cordova-plugin-unimag-swiper",
+    "platforms": [
+      "ios",
+	  "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/placefull/cordova-plugin-unimag-swiper"
+  },
+  "devDependencies": {
+    "cordova": ">=5.4.1"
+  },
+  "keywords": [
+    "unimag",
+	"credit",
+	"card",
+	"swipe",
+    "epos",
+    "ecosystem:cordova",
+    "cordova-ios",
+	"cordova-android"
+  ],
+  "author": "POSaBIT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/placefull/cordova-plugin-unimag-swiper/issues"
+  },
+  "homepage": "https://github.com/placefull/cordova-plugin-unimag-swiper"
+}
