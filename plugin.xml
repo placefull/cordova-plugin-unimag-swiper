@@ -2,14 +2,14 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.wodify.cordova.plugin.unimag-swiper"
+    id="cordova-plugin-unimag-swiper"
     version="0.0.3">
 
     <name>Cordova-Plugin-UniMag-Swiper</name>
 
     <description>Cordova plugin for IDTech Unimag II, Unimag Pro, and Shuttle mobile credit card swipers.</description>
 
-    <repo>https://github.com/elizabethrego/cordova-plugin-unimag-swiper.git</repo>
+    <repo>https://github.com/placefull/cordova-plugin-unimag-swiper.git</repo>
 
     <keyword>wodify, idtech, unimag, swiper, card reader, credit card</keyword>
 
